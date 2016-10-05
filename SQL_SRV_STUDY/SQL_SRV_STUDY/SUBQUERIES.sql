@@ -1,3 +1,5 @@
+USE TSQL2012
+
 /*For example, the following
 query uses a self-contained subquery to return the products with the minimum unit price.*/
 
@@ -34,8 +36,25 @@ WHERE p.unitprice =
 placed orders on February 12, 2007.
 */
 
-
 SELECT c.*
-FROM Sales.Customers c
+FROM  Sales.Customers c
 WHERE c.custid IN
-(SELECT * FROM Sales.Orders o WHERE o.orderdate = '20070212')
+(
+    SELECT o.custid
+    FROM Sales.Orders o
+    WHERE o.orderdate = '20070212'
+);
+
+--3
+/*Rewrite with EXISTS*/
+
+SELECT c.custid, c.companyname,
+       c.contactname
+FROM Sales.Customers c
+WHERE EXISTS
+(
+    SELECT NULL
+    FROM Sales.Orders o
+    WHERE o.custid = c.custid
+          AND o.orderdate = '20070212'
+);
