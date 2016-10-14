@@ -37,17 +37,17 @@
           <AssociatedConnUserName />
           <FullPath>JOINS.sql</FullPath>
         </FileNode>
+        <FileNode Name="Pivot.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:A:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>A</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Pivot.sql</FullPath>
+        </FileNode>
         <FileNode Name="SUBQUERIES.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:A:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>A</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SUBQUERIES.sql</FullPath>
-        </FileNode>
-        <FileNode Name="Window.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:A:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>A</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>Window.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
